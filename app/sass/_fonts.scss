@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+// font-family: 'Open Sans', sans-serif;
+
+
+@font-face {
+    font-family: 'Caviar Dreams Regular';
+    src: url('../fonts/CaviarDreams.eot');
+    src: url('../fonts/CaviarDreams.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDreams.woff') format('woff'),
+    url('../fonts/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams Bold';
+    src: url('../fonts/CaviarDreams-Bold.eot');
+    src: url('../fonts/CaviarDreams-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDreams-Bold.woff') format('woff'),
+    url('../fonts/CaviarDreams-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin spec-regular {
+    font-family: 'Caviar Dreams Regular';
+}
+
+@mixin spec-bold {
+    font-family: 'Caviar Dreams Bold';
+}
