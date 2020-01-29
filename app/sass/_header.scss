@@ -1,0 +1,151 @@
+.header-banner{
+    max-width: 1080px;
+    height: 137px;
+    background-color: #dddddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.header{
+    &-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 22px;
+        padding-bottom: 22px; 
+    }
+    &-info{
+        &__row{
+            display: flex;
+            align-items: flex-end;
+            &:first-child{
+                margin-bottom: 22px;
+            }
+        }
+        &__title{
+            margin-right: 30px;
+        }
+        &__value{
+            font-size: 24px;
+            img{
+                margin-left: 14px;
+            }
+        }
+    }
+    &-logo{
+        display: flex;
+        align-items: center;
+        &__img{
+            width: 95px;
+            margin-right: 22px;
+        }
+        &__title{
+            @include spec-bold;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        &__desc{
+            @include spec-regular;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3.92px;
+            margin-top: 20px;
+        }
+        &__wrap{
+            text-align: center;
+        }
+    }
+    &-search{
+        &__label{
+            position: relative;
+        }
+        &__input{
+            border: 1px solid #1f1f1f;
+            width: 206px;
+            border-radius: 18px;
+            background-color: $white;
+            opacity: 0.1;
+            font-size: 16px;
+            outline: none;
+            padding: 8px 48px 8px 16px;
+            transition: .2s;
+            &:focus, &:not([value=""]){
+                opacity: 1;
+                box-shadow: $box-shadow;
+                border-color: $blue;
+            }
+        }
+        &__btn{
+            width: 25px;
+            height: 28px;
+            background: url('../img/search.png') center center no-repeat;
+            border: 0;
+            cursor: pointer;
+            position: absolute;
+            top: 4px;
+            right: 15px;
+            outline: none;
+        }
+        &__sub{
+            width: 165px;
+            border-radius: 18px;
+            opacity: 0.7;
+            background-color: $blue;
+            padding: 8px;
+            text-align: center;
+            border: 0;
+            color: $white;
+            margin-left: 14px;
+            transition: .3s;
+            &:hover{
+                opacity: 1;
+                box-shadow: $box-shadow;
+            }
+        }
+        &__row{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 25px;
+        }
+        &__icon{
+            height: 25px;
+            transition: .3s;
+            margin-left: 22px;
+            path, circle, polygon{
+                fill: $black;
+                transition: .3s;
+            }
+            &:hover{
+                filter: drop-shadow( 0px 0px 3px $blue );
+                path, circle, polygon{
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}
+.header-nav{
+    background-color: $blue;
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item{
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0 14px;
+        transition: .3s;
+        &:hover{
+            background-color: #43b5e6;
+        }
+        a{
+            display: block;
+            padding: 23px 10px;
+        }
+    }
+}

@@ -2,6 +2,7 @@ $white: #fff;
 $black: #474747;
 $blue: #4fc3f7;
 $lt: #cde9f6;
+$box-shadow: 0 0 3px 1px $blue;
 
 * {
     box-sizing: border-box;
@@ -19,4 +20,24 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: $black;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
