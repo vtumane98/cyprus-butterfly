@@ -65,7 +65,12 @@ button{
 .owl-next,.owl-prev{
     width: 16px;
     height: 28px;
-    filter: drop-shadow( 0px 0px 2px $black );
+    opacity: .7;
+    transition: .3s;
+    &:hover{
+        opacity: 1;
+        filter: drop-shadow( 0px 0px 2px $black );
+    }
 }
 .owl-carousel--white{
     .owl-dot{
@@ -85,13 +90,30 @@ button{
     .owl-dot{
         background-color: $lt;
     }
-    .owl-next,.owl-prev{
-        filter: drop-shadow( 0px 0px 1px $black );
-    }
     .owl-next{
         background: url('../img/arrow-right_dark.png') center center no-repeat;
     }
     .owl-prev{
         background: url('../img/arrow-left_dark.png') center center no-repeat;
+    }
+}
+.soc-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__icon{
+        height: 25px;
+        transition: .3s;
+        margin-left: 22px;
+        path, circle, polygon{
+            fill: $white;
+            transition: .3s;
+        }
+        &:hover{
+            filter: drop-shadow( 0px 0px 3px $blue );
+            path, circle, polygon{
+                fill: $blue !important;
+            }
+        }
     }
 }

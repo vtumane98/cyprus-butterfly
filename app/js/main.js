@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         items:4,
         smartSpeed:250,
         slideBy: 4,
-        
     })
 
     $('.photo-slider').owlCarousel({
@@ -33,14 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
         smartSpeed:650,
     })
 
-    $(".transport-type__item").click(function(){
-        $(".transport-type__item").removeClass("active");
-        $(this).addClass("active")
+    $('.location-slider').owlCarousel({
+        items:2,
+        smartSpeed:250,
+        slideBy: 2,
+        margin: 8,
+        nav:true,
+        dots:true,
     })
 
-    $(".rent-type__item").click(function(){
-        $(".rent-type__item").removeClass("active");
-        $(this).addClass("active")
+    $(".transport-type__item").on("click", function() {
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".transport-type__tab").removeClass("active").eq($(this).index()).addClass("active");
+    })
+
+    $(".rent-type__item").on("click", function() {
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".rent-type__tab").removeClass("active").eq($(this).index()).addClass("active");
     })
 
 })
