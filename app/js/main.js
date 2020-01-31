@@ -103,6 +103,18 @@ $(document).ready(function () {
             nextEl: '.location-slider .slider-button-next',
             prevEl: '.location-slider .slider-button-prev',
         },
+        breakpoints: {
+            970: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 30,
+            },
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 10,
+            },
+        },
     });
 
     $(".transport-type__tab").slice(1).removeClass("active");
@@ -123,7 +135,14 @@ $(document).ready(function () {
     $(".burger-menu").click(function(){
         $(".header-nav").addClass("active")
     })
+
     $(".burger-menu__close").click(function(){
         $(".header-nav").removeClass("active")
     })
+
+    $(".header-search__btn").click(function(){
+        $(".header-search__label").toggleClass('active');
+        $(".header-logo").toggleClass('active')
+    })
+
 })

@@ -1,5 +1,5 @@
 $white: #fff;
-$black: #474747;
+$black: #141414;
 $blue: #4fc3f7;
 $lt: #cde9f6;
 $box-shadow: 0 0 3px 1px $blue;
@@ -47,7 +47,12 @@ button{
     outline: none;
     cursor: pointer;
 }
-
+button:active, button:focus{
+    outline: none !important;
+}
+button::-moz-focus-inner {
+    border: 0 !important;
+}
 .container{
     width: 100%;
     max-width: 1440px;
@@ -116,7 +121,11 @@ button{
         background-image: url('../img/arrow-left_dark.png');
     }
 }
-
+.swiper-button-disabled:hover{
+    opacity: .65;
+    cursor: default;
+    filter: none;
+}
 .soc-wrap{
     display: flex;
     justify-content: flex-end;

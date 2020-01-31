@@ -82,5 +82,8 @@
     &__politic{
         display: block;
         text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }

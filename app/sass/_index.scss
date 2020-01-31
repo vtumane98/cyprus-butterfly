@@ -75,6 +75,9 @@
     top: 231px;
     right: 0;
     z-index: 1;
+    &:hover{
+        text-decoration: underline;
+    }
     &--goods{
         top: auto;
         bottom: 0px;

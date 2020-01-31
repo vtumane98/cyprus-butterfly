@@ -343,8 +343,12 @@
     .transport-type{
         margin-bottom: 28px;
     }
-    .goods-slider__item{
-        width: 172px;
+    .goods-slider{
+        width: 100%;
+        transform: none;
+    }
+    .goods-slider .swiper-slide, .goods-slider__item{
+        width: 170px !important;
     }
     .goods-slider__title{
         font-size: 14px;
@@ -388,6 +392,10 @@
         padding-right: 8px;
         padding-left: 12px;
     }
+    .footer-nav{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
     .footer-logo__img{
         width: 90px;
     }
@@ -396,7 +404,7 @@
     }
     .footer-logo__subtitle{
         font-size: 22px;
-        margin: 12px 0 8px;
+        margin: 0px 0 3px;
     }
     .footer-logo__desc{
         font-size: 13px;
@@ -413,7 +421,7 @@
     }
     .footer{
         font-size: 13px;
-        padding: 42px 0 32px;
+        padding: 36px 0 32px;
     }
     .footer__cop{
         margin-bottom: 20px;
@@ -423,20 +431,9 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    
 }
 @media(max-width: 970px){
-    .header-search__input{
-        width: 0;
-        padding: 0;
-        border: 0
-    }
-    .header-search__btn{
-        width: 30px;
-        height: 30px;
-        background-size: 30px 30px;
-        top: -6px;
-        right: 0;
-    }
     .container{
         max-width: 100%;
         padding-left: 35px;
@@ -457,8 +454,16 @@
         letter-spacing: 3.92px;
         margin-top: 10px;
     }
-    .header__soc, .header-search__sub, .header-info, .cyprus-trends, .drop-menu{
+    .header__soc, .header-search__sub, .header-info, .drop-menu{
         display: none;
+    }
+    .cyprus-trends{
+        width: 100%;
+        max-width: 520px;
+        padding: 0 50px;
+    }
+    .cyprus-trends__img{
+        height: 348px;
     }
     .burger-menu{
         display: block;
@@ -554,7 +559,9 @@
     }
     .main-wrap{
         padding-left: 0;
-        padding-right: 0; 
+        padding-right: 0;
+        flex-direction: column;
+        align-items: center;
     }
     .section-block .slider-pagination{
         display: none;
@@ -590,8 +597,8 @@
     .card-slider .swiper-slide:first-child .card-slider__desc{
         display: none;
     }
-    .goods-slider__item{
-        width: 228px;
+    .goods-slider .swiper-slide, .goods-slider__item{
+        width: 228px !important;
     }
     .goods-slider__img{
         height: 196px;
@@ -703,26 +710,159 @@
     .detail-page--goods{
         bottom: 0;
     }
+    .landmark-section{
+        display: block;
+    }
+    .photo-slider--bottom{
+        margin-bottom: 0px;
+    }
+    .photo-slider{
+        margin-bottom: 40px;
+    }
+    .detail-page--location{
+        bottom: 0;
+    }
+    .location-slider__item{
+        width: 100%;
+        max-width: 566px;
+        min-height: 416px;
+        margin: 0 auto;
+    }
+    .location-slider__title{
+        font-size: 28px;
+    }
+    .location-slider__title::before{
+        width: 62px;
+        height: 5px;
+    }
+    .location-slider__content{
+        width: 284px;
+    }
+    .location-slider__desc{
+        font-size: 20px;
+    }
+    .location-slider__geo{
+        display: none;
+    }
+    .location-slider__btn{
+        font-size: 18px;
+        padding: 12px 14px;
+        border-radius: 23px;
+    }
+    .photo-slider .slider-pagination{
+        display: flex;
+    }
+    .header-info--mob{
+        display: flex;
+    }
+    .header-search__input{
+        width: 0;
+        padding: 0;
+        border: 0;
+        height: 38px;
+        &:focus, &:not([value=""]){
+            box-shadow: none;
+        }
+    }
+    .header-search__btn{
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        top: 4px;
+        right: 10px;
+        background-image: url('../img/search-blue.png');
+    }
+    .header-search__label.active{
+        .header-search__input{
+            width: 200px;
+            font-size: 18px;
+            border: 1px solid $black;
+            padding: 0 46px 0 14px;
+        }
+    } 
 }
 @media (max-width: 640px) {
     .container, .section-block, .rent-type, .main-content__title, .main-content__desc{
         padding-left: 32px;
-        padding-left: 32px;
+        padding-right: 32px;
     }
     .main-wrap {
         padding-left: 0;
         padding-right: 0;
     }
+    .cyprus-trends__img{
+        height: 279px;
+    }
+    .location-slider__item{
+        min-height: 348px;
+    }
+    .header-info--mob{
+        justify-content: space-between;
+    }
+    .header-search__input{
+        width: 0;
+        padding: 0;
+        border: 0;
+        height: 51px;
+        transition: 0s;
+        border-radius: 0;
+    }
+    .header-search__btn{
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        top: 12px;
+        right: 10px;
+        background-image: url('../img/search-blue.png');
+    }
+    .header-search__label.active{
+        .header-search__input{
+            width: calc(100vw - 140px);
+            font-size: 18px;
+            border: 0;
+            border-bottom: 2px solid $black;
+            padding: 0 46px 0 20px;
+        }
+    }
+    .header-logo.active{
+        display: none;
+    }
+    
 }
-
+@media (max-width: 540px){
+    .cyprus-trends__img{
+        height: 248px;
+    }
+    .location-slider__item{
+        min-height: 310px;
+    }
+    .header-info--mob{
+        padding-left: 30px;
+        padding-right: 30px; 
+    }
+}
 @media (max-width: 480px) {
     .container, .section-block, .rent-type, .main-content__title, .main-content__desc{
         padding-left: 20px;
-        padding-left: 20px;
+        padding-right: 20px;
     }
     .main-wrap {
         padding-left: 0;
         padding-right: 0;
+    }
+    .header-info--mob{
+        padding: 3px 20px 6px;
+    }
+    .header-info--mob .header-info__title{
+        font-size: 12px;
+        margin-right: 8px;
+    }
+    .header-info--mob .header-info__value{
+        font-size: 14px;
+    }
+    .header-info--mob .header-info__value img{
+        width: 14px;
+        margin-left: 6px;
     }
     .burger-menu__item{
         width: 21px;
@@ -797,8 +937,8 @@
         border-radius: 16px;
         padding: 7px 28px;
     }
-    .goods-slider__item{
-        width: 152px;
+    .goods-slider .swiper-slide, .goods-slider__item{
+        width: 152px !important;
     }
     .goods-slider{
         width: 100%;
@@ -851,7 +991,7 @@
     }
     .footer-logo__subtitle{
         font-size: 18px;
-        margin: 12px 0 8px;
+        margin: 2px 0 4px;
     }
     .footer-logo__desc{
         font-size: 12px;
@@ -893,5 +1033,48 @@
     }
     .header-nav{
         max-width: 252px;
+    }
+    .cyprus-trends__img{
+        height: 165px;
+    }
+    .location-slider__item{
+        min-height: 252px;
+    }
+    .location-slider__title{
+        font-size: 18px;
+    }
+    .location-slider__title::before{
+        width: 30px;
+        height: 3px;
+    }
+    .location-slider__desc{
+        font-size: 14px;
+    }
+    .location-slider__content{
+        width: 140px;
+    }
+    .location-slider__btn{
+        font-size: 12px;
+        padding: 8px 8px;
+        border-radius: 15px;
+    }
+    .header-search__input{
+        height: 36px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .header-search__label.active{
+        .header-search__input{
+            font-size: 14px;
+            width: calc(100vw - 90px);
+            border: 0;
+            border-bottom: 2px solid $black;
+            padding: 0 46px 0 20px;
+        }
+    }
+    .header-search__btn{
+        top: 10px;
+        right: 0;
     }
 }
