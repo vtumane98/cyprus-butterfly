@@ -4,269 +4,289 @@ block variables
     - var pageTitle = "Cyprus Butterfly"
 
 block content
-    .main-slider.owl-carousel.owl-carousel--white
-        .main-slider__item(style="background-image: url('img/bg1.jpg')")
-        .main-slider__item(style="background-image: url('img/bg1.jpg')")
-        .main-slider__item(style="background-image: url('img/bg1.jpg')")
+    .main-slider.swiper-container
+        .swiper-wrapper
+            .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
+            .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
+            .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
+        .slider-pagination
+        .container.slider-button-container
+            .slider-button-next
+            .slider-button-prev
     .container.main-wrap
         .main-content
             section.news-section
                 h2.main-content__title Новости Кипра
                 p.main-content__desc Все самые свежежие и актуальные новости Кипра на одном сайте.
                 .section-block
-                    .slider-container.slider-container--top.owl-carousel--white
-                        .card-slider.owl-carousel
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card1.jpg')")
-                                    .card-slider__subtitle Солнце или дождь: какая погода ждет жителей Кипра на выходных?
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card2.jpg')")
-                                    .card-slider__subtitle На Кипре прошла крупнейшая...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                    .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                    .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card1.jpg')")
-                                    .card-slider__subtitle На Кипре прошла крупнейшая...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card2.jpg')")
-                                    .card-slider__subtitle На Кипре прошла крупнейшая...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                    .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                    .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card1.jpg')")
-                                    .card-slider__subtitle На Кипре прошла крупнейшая...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card2.jpg')")
-                                    .card-slider__subtitle На Кипре прошла крупнейшая...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                    .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                    .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
+                    .slider-container.slider-container--top
+                        .card-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card1.jpg')")
+                                        .card-slider__subtitle Солнце или дождь: какая погода ждет жителей Кипра на выходных?
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card2.jpg')")
+                                        .card-slider__subtitle На Кипре прошла крупнейшая...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
+                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
+                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card1.jpg')")
+                                        .card-slider__subtitle На Кипре прошла крупнейшая...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card2.jpg')")
+                                        .card-slider__subtitle На Кипре прошла крупнейшая...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
+                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
+                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card1.jpg')")
+                                        .card-slider__subtitle На Кипре прошла крупнейшая...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card2.jpg')")
+                                        .card-slider__subtitle На Кипре прошла крупнейшая...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
+                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
+                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                            .slider-pagination
+                            .slider-button-container
+                                .slider-button-next
+                                .slider-button-prev
                         .detail-page
                             a(href="#") Читать все
                     h2 Блоги о Кипре
                     p Интересные и познавательные блоги о Кипре, узнай все про Кипр, его культуру, достопримечательности, насущие проблемы от жителей и путешественников Кипра. 
-                    .slider-container.slider-container--bottom.owl-carousel--dark
-                        .card-slider.owl-carousel
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card4.jpg')")
-                                    .card-slider__subtitle Рай для сладкоежек: в Какопетрии прошел ежегодный Фестиваль Варенья
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card5.jpg')")
-                                    .card-slider__subtitle 1 Октября - День Независимости...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Антон Жаров
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                    .card-slider__subtitle В Лимассоле отгремел на славу...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                    .card-slider__subtitle В Лимассоле отгремел на славу...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card4.jpg')")
-                                    .card-slider__subtitle 1 Октября - День Независимости...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card5.jpg')")
-                                    .card-slider__subtitle 1 Октября - День Независимости...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Антон Жаров
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                    .card-slider__subtitle В Лимассоле отгремел на славу...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                    .card-slider__subtitle В Лимассоле отгремел на славу...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card4.jpg')")
-                                    .card-slider__subtitle 1 Октября - День Независимости...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card5.jpg')")
-                                    .card-slider__subtitle 1 Октября - День Независимости...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Антон Жаров
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                    .card-slider__subtitle В Лимассоле отгремел на славу...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                    .card-slider__subtitle В Лимассоле отгремел на славу...
-                                    .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 01 октября 2019
-                        .detail-page
+                    .slider-container.slider-container--bottom
+                        .card-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card4.jpg')")
+                                        .card-slider__subtitle Рай для сладкоежек: в Какопетрии прошел ежегодный Фестиваль Варенья
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card5.jpg')")
+                                        .card-slider__subtitle 1 Октября - День Независимости...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Антон Жаров
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
+                                        .card-slider__subtitle В Лимассоле отгремел на славу...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
+                                        .card-slider__subtitle В Лимассоле отгремел на славу...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card4.jpg')")
+                                        .card-slider__subtitle 1 Октября - День Независимости...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card5.jpg')")
+                                        .card-slider__subtitle 1 Октября - День Независимости...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Антон Жаров
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
+                                        .card-slider__subtitle В Лимассоле отгремел на славу...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
+                                        .card-slider__subtitle В Лимассоле отгремел на славу...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card4.jpg')")
+                                        .card-slider__subtitle 1 Октября - День Независимости...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card5.jpg')")
+                                        .card-slider__subtitle 1 Октября - День Независимости...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Антон Жаров
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
+                                        .card-slider__subtitle В Лимассоле отгремел на славу...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
+                                        .card-slider__subtitle В Лимассоле отгремел на славу...
+                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                            .slider-pagination.slider-pagination--dark
+                            .slider-button-container
+                                .slider-button-next.slider-button-next--black
+                                .slider-button-prev.slider-button-prev--black
+                        .detail-page.detail-page--blue
                             a(href="#") Читать все
             
             section.events-section
-                h2.main-content__title Новости Кипра
-                p.main-content__desc Все самые свежежие и актуальные новости Кипра на одном сайте.
+                h2.main-content__title События
+                p.main-content__desc Все самые интересные события на Кипре, фестивали, концерты, вечеринки, спортивные мероприятия, мастер классы.
                 .section-block
-                    .slider-container.slider-container--top.owl-carousel--white
-                        .card-slider.owl-carousel
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card7.jpg')")
-                                    .card-slider__subtitle Сегодня в Какопетри пройдет фестиваль варенья «Глико ту куталью»
-                                    .card-slider__row
-                                        .card-slider__author Лера Маркова
-                                        .card-slider__date 29 сентября
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card8.jpg')")
-                                    .card-slider__subtitle ТОП-5 главных осенних фестива...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card9.jpg')")
-                                    .card-slider__subtitle На Кипре с большим успехом...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card9.jpg')")
-                                    .card-slider__subtitle На Кипре с большим успехом...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card7.jpg')")
-                                    .card-slider__subtitle На Кипре с большим успехом...
-                                    .card-slider__row
-                                        .card-slider__author Лера Маркова
-                                        .card-slider__date 29 сентября
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card8.jpg')")
-                                    .card-slider__subtitle ТОП-5 главных осенних фестива...
-                                    .card-slider__row
-                                        .card-slider__author Катя Чехова
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card9.jpg')")
-                                    .card-slider__subtitle На Кипре с большим успехом...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
-                            a(href="#")
-                                .card-slider__item
-                                    .card-slider__img(style="background-image: url('img/card9.jpg')")
-                                    .card-slider__subtitle На Кипре с большим успехом...
-                                    .card-slider__row
-                                        .card-slider__author Сергей Соло
-                                        .card-slider__date 4 часа назад
+                    .slider-container.slider-container--top
+                        .card-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card7.jpg')")
+                                        .card-slider__subtitle Сегодня в Какопетри пройдет фестиваль варенья «Глико ту куталью»
+                                        .card-slider__row
+                                            .card-slider__author Лера Маркова
+                                            .card-slider__date 29 сентября
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card8.jpg')")
+                                        .card-slider__subtitle ТОП-5 главных осенних фестива...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card9.jpg')")
+                                        .card-slider__subtitle На Кипре с большим успехом...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card9.jpg')")
+                                        .card-slider__subtitle На Кипре с большим успехом...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card7.jpg')")
+                                        .card-slider__subtitle На Кипре с большим успехом...
+                                        .card-slider__row
+                                            .card-slider__author Лера Маркова
+                                            .card-slider__date 29 сентября
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card8.jpg')")
+                                        .card-slider__subtitle ТОП-5 главных осенних фестива...
+                                        .card-slider__row
+                                            .card-slider__author Катя Чехова
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card9.jpg')")
+                                        .card-slider__subtitle На Кипре с большим успехом...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                                a(href="#").swiper-slide
+                                    .card-slider__item
+                                        .card-slider__img(style="background-image: url('img/card9.jpg')")
+                                        .card-slider__subtitle На Кипре с большим успехом...
+                                        .card-slider__row
+                                            .card-slider__author Сергей Соло
+                                            .card-slider__date 4 часа назад
+                            .slider-pagination
+                            .slider-button-container
+                                .slider-button-next
+                                .slider-button-prev
                         .detail-page
                             a(href="#") Читать все
                     h2 Аренда транспорта
@@ -276,87 +296,107 @@ block content
                         button.transport-type__item Мотоциклы
                         button.transport-type__item Яхты и катеры
                         button.transport-type__item Самолеты
-                    .slider-container.owl-carousel--dark.goods-slider--bottom.transport-type__tab.active
-                        .goods-slider.owl-carousel
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card10.jpg')")
-                                .goods-slider__title BMW x5 (black)
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card11.jpg')")
-                                .goods-slider__title BMW x5 (black)
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title BMW x5 (black)
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title BMW x5 (black)
-                                .goods-slider__price 240 $ / day
-                        .detail-page.detail-page--goods
+                    .slider-container.goods-slider--bottom.transport-type__tab.active
+                        .goods-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card10.jpg')")
+                                        .goods-slider__title BMW x5 (black)
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card11.jpg')")
+                                        .goods-slider__title BMW x5 (black)
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card12.jpg')")
+                                        .goods-slider__title BMW x5 (black)
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card12.jpg')")
+                                        .goods-slider__title BMW x5 (black)
+                                        .goods-slider__price 240 $ / day
+                        .detail-page.detail-page--goods.detail-page--blue
                             a(href="#") Посмотреть все предложения
-                    .slider-container.owl-carousel--dark.goods-slider--bottom.transport-type__tab
-                        .goods-slider.owl-carousel
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card10.jpg')")
-                                .goods-slider__title Мотоциклы
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card11.jpg')")
-                                .goods-slider__title Мотоциклы
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title Мотоциклы
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title Мотоциклы
-                                .goods-slider__price 240 $ / day
-                        .detail-page.detail-page--goods
+                    .slider-container.goods-slider--bottom.transport-type__tab.active
+                        .goods-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card12.jpg')")
+                                        .goods-slider__title Мотоциклы
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card10.jpg')")
+                                        .goods-slider__title Мотоциклы
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card11.jpg')")
+                                        .goods-slider__title Мотоциклы
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card12.jpg')")
+                                        .goods-slider__title Мотоциклы
+                                        .goods-slider__price 240 $ / day
+                        .detail-page.detail-page--goods.detail-page--blue
                             a(href="#") Посмотреть все предложения
                     
-                    .slider-container.owl-carousel--dark.goods-slider--bottom.transport-type__tab
-                        .goods-slider.owl-carousel
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card10.jpg')")
-                                .goods-slider__title Яхты
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card11.jpg')")
-                                .goods-slider__title Яхты
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title Яхты
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title Яхты
-                                .goods-slider__price 240 $ / day
-                        .detail-page.detail-page--goods
+                    .slider-container.goods-slider--bottom.transport-type__tab.active
+                        .goods-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card11.jpg')")
+                                        .goods-slider__title Яхты
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card12.jpg')")
+                                        .goods-slider__title Яхты
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card11.jpg')")
+                                        .goods-slider__title Яхты
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card11.jpg')")
+                                        .goods-slider__title Яхты
+                                        .goods-slider__price 240 $ / day
+                        .detail-page.detail-page--goods.detail-page--blue
                             a(href="#") Посмотреть все предложения
 
-                    .slider-container.owl-carousel--dark.goods-slider--bottom.transport-type__tab
-                        .goods-slider.owl-carousel
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card10.jpg')")
-                                .goods-slider__title Самолеты
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card11.jpg')")
-                                .goods-slider__title Самолеты
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title Самолеты
-                                .goods-slider__price 240 $ / day
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card12.jpg')")
-                                .goods-slider__title Самолеты
-                                .goods-slider__price 240 $ / day
-                        .detail-page.detail-page--goods
+                    .slider-container.goods-slider--bottom.transport-type__tab.active
+                        .goods-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card10.jpg')")
+                                        .goods-slider__title Самолеты
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card10.jpg')")
+                                        .goods-slider__title Самолеты
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card11.jpg')")
+                                        .goods-slider__title Самолеты
+                                        .goods-slider__price 240 $ / day
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card12.jpg')")
+                                        .goods-slider__title Самолеты
+                                        .goods-slider__price 240 $ / day
+                        .detail-page.detail-page--goods.detail-page--blue
                             a(href="#") Посмотреть все предложения
 
             section.realty-section
@@ -367,100 +407,125 @@ block content
                     button.rent-type__item.active Продажа
                     button.rent-type__item Аренда
                 .section-block
-                    .slider-container.owl-carousel--white.goods-slider--top.rent-type__tab.active
-                        .goods-slider.owl-carousel
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card13.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card14.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card15.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card15.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                    .slider-container.goods-slider--top.rent-type__tab.active
+                        .goods-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card13.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card14.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card15.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card15.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Limassol / Mesa Geitonia
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
                         .detail-page.detail-page--goods
                             a(href="#") Посмотреть все предложения
-                    .slider-container.owl-carousel--white.goods-slider--top.rent-type__tab
-                        .goods-slider.owl-carousel
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card13.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Аренда
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card14.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Аренда
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card15.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Аренда
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
-                            .goods-slider__item
-                                .goods-slider__img(style="background-image: url('img/card15.jpg')")
-                                .goods-slider__title.goods-slider__title--geo Аренда
-                                .goods-slider__price 240 000 $
-                                .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                    .slider-container.goods-slider--top.rent-type__tab.active
+                        .goods-slider.swiper-container
+                            .swiper-wrapper
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card15.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Аренда
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card13.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Аренда
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card14.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Аренда
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
+                                a(href="#").swiper-slide
+                                    .goods-slider__item
+                                        .goods-slider__img(style="background-image: url('img/card14.jpg')")
+                                        .goods-slider__title.goods-slider__title--geo Аренда
+                                        .goods-slider__price 240 000 $
+                                        .goods-slider__info 2 спальни 88 м<sup>2</sup>
                         .detail-page.detail-page--goods
                             a(href="#") Посмотреть все предложения
                     h2 Экскурсии по Кипру
                     p Посетите неизведанные места, посмотрите все достопримечательности, прикоснитесь к истории. Все это сможете сделать как с гидом, так и самостоятельно.
-                    .slider-container.owl-carousel--white
-                        .photo-slider.owl-carousel
-                            .photo-slider__item(style="background-image: url('img/bg2.jpg')")
-                            .photo-slider__item(style="background-image: url('img/bg2.jpg')")
-                            .photo-slider__item(style="background-image: url('img/bg2.jpg')")
-                            .photo-slider__item(style="background-image: url('img/bg2.jpg')")
-                    h2 Достопримечательности Кипра:
-                    p «Вау!» – вот такое впечатление оставляет о себе Кипр, если присмотреться к нему чуть внимательнее. Любопытный турист, кроме бесподобной национальной кухни и замечательного пляжного отдыха, успеет отметить неисчерпаемое культурное богатство небольшого островка, шикарную природу и обилие мест, окутанных мифическим ореолом древних легенд.   
-                    .slider-container.owl-carousel--dark.location-slider--bottom
-                        .location-slider.owl-carousel
-                            .location-slider__item(style="background-image: url('img/loc-bg1.jpg')")
-                                .location-slider__content.location-slider__content--red
-                                    .location-slider__wrap
-                                        .location-slider__title Palm Beach
-                                        .location-slider__desc Красивая бухта возле Лимассола, обрамленая белыми скалами
-                                    .location-slider__wrap
-                                        .location-slider__geo Пляжи Лимассол
-                                        button.location-slider__btn Показать на карте
-                            .location-slider__item(style="background-image: url('img/loc-bg2.jpg')")
-                                .location-slider__content.location-slider__content--blue
-                                    .location-slider__wrap
-                                        .location-slider__title Монастырь Святого Креста
-                                        .location-slider__desc Духовный символ и религиозный центр Омодоса
-                                    .location-slider__wrap
-                                        .location-slider__geo Христианские Святыни<br>Памятники и архетиктура<br>Деревни Айя Напа
-                                        button.location-slider__btn Показать на карте
-                            .location-slider__item(style="background-image: url('img/loc-bg1.jpg')")
-                                .location-slider__content.location-slider__content--blue
-                                    .location-slider__wrap
-                                        .location-slider__title Palm Beach
-                                        .location-slider__desc Красивая бухта возле Лимассола, обрамленая белыми скалами
-                                    .location-slider__wrap
-                                        .location-slider__geo Пляжи Лимассол
-                                        button.location-slider__btn Показать на карте
-                            .location-slider__item(style="background-image: url('img/loc-bg2.jpg')")
-                                .location-slider__content.location-slider__content--red
-                                    .location-slider__wrap
-                                        .location-slider__title Монастырь Святого Креста
-                                        .location-slider__desc Духовный символ и религиозный центр Омодоса
-                                    .location-slider__wrap
-                                        .location-slider__geo Христианские Святыни<br>Памятники и архетиктура<br>Деревни Айя Напа
-                                        button.location-slider__btn Показать на карте
-                        .detail-page.detail-page--location
-                            a(href="#") Посмотреть все
+                    .slider-container.photo-slider--bottom
+                        .photo-slider.swiper-container
+                            .swiper-wrapper
+                                .swiper-slide.photo-slider__item(style="background-image: url('img/bg2.jpg')")
+                                .swiper-slide.photo-slider__item(style="background-image: url('img/bg2.jpg')")
+                                .swiper-slide.photo-slider__item(style="background-image: url('img/bg2.jpg')")
+                                .swiper-slide.photo-slider__item(style="background-image: url('img/bg2.jpg')")
+                            .slider-pagination
+                            .slider-button-container
+                                .slider-button-next
+                                .slider-button-prev
+                    .landmark-section
+                        h2 Достопримечательности Кипра:
+                        p «Вау!» – вот такое впечатление оставляет о себе Кипр, если присмотреться к нему чуть внимательнее. Любопытный турист, кроме бесподобной национальной кухни и замечательного пляжного отдыха, успеет отметить неисчерпаемое культурное богатство небольшого островка, шикарную природу и обилие мест, окутанных мифическим ореолом древних легенд.   
+                        .slider-container.location-slider--bottom
+                            .location-slider.swiper-container
+                                .swiper-wrapper
+                                    a(href="#").swiper-slide
+                                        .location-slider__item(style="background-image: url('img/loc-bg1.jpg')")
+                                            .location-slider__content.location-slider__content--red
+                                                .location-slider__wrap
+                                                    .location-slider__title Palm Beach
+                                                    .location-slider__desc Красивая бухта возле Лимассола, обрамленая белыми скалами
+                                                .location-slider__wrap
+                                                    .location-slider__geo Пляжи Лимассол
+                                                    button.location-slider__btn Показать на карте
+                                    a(href="#").swiper-slide
+                                        .location-slider__item(style="background-image: url('img/loc-bg2.jpg')")
+                                            .location-slider__content.location-slider__content--blue
+                                                .location-slider__wrap
+                                                    .location-slider__title Монастырь Святого Креста
+                                                    .location-slider__desc Духовный символ и религиозный центр Омодоса
+                                                .location-slider__wrap
+                                                    .location-slider__geo Христианские Святыни<br>Памятники и архетиктура<br>Деревни Айя Напа
+                                                    button.location-slider__btn Показать на карте
+                                    a(href="#").swiper-slide
+                                        .location-slider__item(style="background-image: url('img/loc-bg1.jpg')")
+                                            .location-slider__content.location-slider__content--blue
+                                                .location-slider__wrap
+                                                    .location-slider__title Palm Beach
+                                                    .location-slider__desc Красивая бухта возле Лимассола, обрамленая белыми скалами
+                                                .location-slider__wrap
+                                                    .location-slider__geo Пляжи Лимассол
+                                                    button.location-slider__btn Показать на карте
+                                    a(href="#").swiper-slide
+                                        .location-slider__item(style="background-image: url('img/loc-bg2.jpg')")
+                                            .location-slider__content.location-slider__content--red
+                                                .location-slider__wrap
+                                                    .location-slider__title Монастырь Святого Креста
+                                                    .location-slider__desc Духовный символ и религиозный центр Омодоса
+                                                .location-slider__wrap
+                                                    .location-slider__geo Христианские Святыни<br>Памятники и архетиктура<br>Деревни Айя Напа
+                                                    button.location-slider__btn Показать на карте
+                                .slider-pagination.slider-pagination--dark
+                                .slider-button-container
+                                    .slider-button-next
+                                    .slider-button-prev
+                            .detail-page.detail-page--location.detail-page--blue
+                                a(href="#") Посмотреть все
 
 
 

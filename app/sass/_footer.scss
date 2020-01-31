@@ -35,6 +35,7 @@
     }
     &-logo{
         display: flex;
+        align-items: center;
         &__img{
             width: 130px;
         }
@@ -59,6 +60,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        margin-right: 120px;
         &__title{
             font-size: 30px;
             margin-bottom: 32px;
