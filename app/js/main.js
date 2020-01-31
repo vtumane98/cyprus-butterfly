@@ -68,7 +68,7 @@ $(document).ready(function () {
             0: {
                 slidesPerView: "auto",
                 slidesPerGroup: 1,
-                spaceBetween: 16,
+                spaceBetween: 12,
                 freeMode: true,
                 simulateTouch: true,
             },
@@ -123,7 +123,7 @@ $(document).ready(function () {
     $(".burger-menu").click(function(){
         $(".header-nav").addClass("active")
     })
-    $(".header-nav__row").click(function(){
+    $(".burger-menu__close").click(function(){
         $(".header-nav").removeClass("active")
     })
 })
