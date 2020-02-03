@@ -4,15 +4,16 @@ block variables
     - var pageTitle = "Cyprus Butterfly"
 
 block content
-    .main-slider.swiper-container
-        .swiper-wrapper
-            .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
-            .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
-            .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
-        .slider-pagination
-        .container.slider-button-container
-            .slider-button-next
-            .slider-button-prev
+    .container
+        .main-slider.swiper-container
+            .swiper-wrapper
+                .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
+                .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
+                .swiper-slide.main-slider__item(style="background-image: url('img/bg1.jpg')")
+            .slider-pagination
+            .container.slider-button-container
+                .slider-button-next
+                .slider-button-prev
     .container.main-wrap
         .main-content
             section.news-section
@@ -25,87 +26,51 @@ block content
                                 a(href="#").swiper-slide
                                     .card-slider__item
                                         .card-slider__img(style="background-image: url('img/card1.jpg')")
-                                        .card-slider__subtitle Солнце или дождь: какая погода ждет жителей Кипра на выходных?
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
+                                        .card-slider__content
+                                            .card-slider__subtitle Солнце или дождь: какая погода ждет жителей Кипра на выходных?
+                                            .card-slider__row
+                                                .card-slider__author Катя Чехова
+                                                .card-slider__date 4 часа назад
                                 a(href="#").swiper-slide
                                     .card-slider__item
                                         .card-slider__img(style="background-image: url('img/card2.jpg')")
-                                        .card-slider__subtitle На Кипре прошла крупнейшая...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
+                                        .card-slider__content
+                                            .card-slider__subtitle На Кипре прошла крупнейшая...
+                                            .card-slider__row
+                                                .card-slider__author Катя Чехова
+                                                .card-slider__date 4 часа назад
                                 a(href="#").swiper-slide
                                     .card-slider__item
                                         .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
+                                        .card-slider__content
+                                            .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                            .card-slider__row
+                                                .card-slider__author Сергей Соло
+                                                .card-slider__date 4 часа назад
                                 a(href="#").swiper-slide
                                     .card-slider__item
                                         .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
+                                        .card-slider__content
+                                            .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
+                                            .card-slider__row
+                                                .card-slider__author Сергей Соло
+                                                .card-slider__date 4 часа назад
                                 a(href="#").swiper-slide
                                     .card-slider__item
                                         .card-slider__img(style="background-image: url('img/card1.jpg')")
-                                        .card-slider__subtitle На Кипре прошла крупнейшая...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
+                                        .card-slider__content
+                                            .card-slider__subtitle На Кипре прошла крупнейшая...
+                                            .card-slider__row
+                                                .card-slider__author Катя Чехова
+                                                .card-slider__date 4 часа назад
                                 a(href="#").swiper-slide
                                     .card-slider__item
                                         .card-slider__img(style="background-image: url('img/card2.jpg')")
-                                        .card-slider__subtitle На Кипре прошла крупнейшая...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card1.jpg')")
-                                        .card-slider__subtitle На Кипре прошла крупнейшая...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card2.jpg')")
-                                        .card-slider__subtitle На Кипре прошла крупнейшая...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card3.jpg')")
-                                        .card-slider__subtitle От пляжа к лунке: Афродайт хиллс -...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
+                                        .card-slider__content
+                                            .card-slider__subtitle На Кипре прошла крупнейшая...
+                                            .card-slider__row
+                                                .card-slider__author Катя Чехова
+                                                .card-slider__date 4 часа назад
                             .slider-pagination
                             .slider-button-container
                                 .slider-button-next
@@ -165,54 +130,6 @@ block content
                                         .card-slider__row
                                             .card-slider__author Антон Жаров
                                             .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                        .card-slider__subtitle В Лимассоле отгремел на славу...
-                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                        .card-slider__subtitle В Лимассоле отгремел на славу...
-                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card4.jpg')")
-                                        .card-slider__subtitle 1 Октября - День Независимости...
-                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card5.jpg')")
-                                        .card-slider__subtitle 1 Октября - День Независимости...
-                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                        .card-slider__row
-                                            .card-slider__author Антон Жаров
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                        .card-slider__subtitle В Лимассоле отгремел на славу...
-                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card6.jpg')")
-                                        .card-slider__subtitle В Лимассоле отгремел на славу...
-                                        .card-slider__desc Такого вы еще не видели! Варенье из чеснока, грибов, морковки...
-                                        .card-slider__row
-                                            .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
                             .slider-pagination.slider-pagination--dark
                             .slider-button-container
                                 .slider-button-next.slider-button-next--black
@@ -268,20 +185,6 @@ block content
                                         .card-slider__subtitle ТОП-5 главных осенних фестива...
                                         .card-slider__row
                                             .card-slider__author Катя Чехова
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card9.jpg')")
-                                        .card-slider__subtitle На Кипре с большим успехом...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
-                                            .card-slider__date 4 часа назад
-                                a(href="#").swiper-slide
-                                    .card-slider__item
-                                        .card-slider__img(style="background-image: url('img/card9.jpg')")
-                                        .card-slider__subtitle На Кипре с большим успехом...
-                                        .card-slider__row
-                                            .card-slider__author Сергей Соло
                                             .card-slider__date 4 часа назад
                             .slider-pagination
                             .slider-button-container

@@ -18,7 +18,8 @@ $(document).ready(function () {
 
     var cardSlider = new Swiper('.card-slider', {
         speed: 450,
-        spaceBetween: 16,
+        slidesPerGroup: 1,
+        slidesPerView: "auto",
         pagination: {
             el: '.card-slider .slider-pagination',
             clickable: true,
@@ -29,25 +30,26 @@ $(document).ready(function () {
             prevEl: '.card-slider .slider-button-prev',
         },
         breakpoints: {
-            1440: {
-              slidesPerView: 4,
-              slidesPerGroup: 4,
-            },
-            1140: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-            },
-            970: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: 12,
-            },
             0: {
-                slidesPerView: "auto",
-                slidesPerGroup: 1,
+                loop: false,
                 spaceBetween: 18,
                 freeMode: true,
             },
+            971: {
+                loop: true,
+                spaceBetween: 11,
+                freeMode: false,
+            },
+            1141: {
+                freeMode: false,
+                loop: true,
+                spaceBetween: 16,
+            },
+            1441: {
+                freeMode: false,
+                loop: true,
+                spaceBetween: 19,
+            }
         },
     });
 
@@ -56,13 +58,13 @@ $(document).ready(function () {
         spaceBetween: 14,
         simulateTouch: false,
         breakpoints: {
-            1440: {
+            1441: {
               slidesPerView: 4,
             },
-            1140: {
+            1141: {
                 slidesPerView: 3,
             },
-            970: {
+            971: {
                 slidesPerView: 3,
             },
             0: {
@@ -104,7 +106,7 @@ $(document).ready(function () {
             prevEl: '.location-slider .slider-button-prev',
         },
         breakpoints: {
-            970: {
+            971: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
                 spaceBetween: 30,
